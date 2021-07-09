@@ -72,7 +72,7 @@ adventurer.start('.adventureArea', myAdventure, 'Q0');
 
 /*
 // edit how the questions, choices, and the finished box show up:
-.questionBox, .finishedBox, .selectionBox, & .finishedBox
+.questionBox, .finishedBox, .selectionBox
 */
 ```
 ### JS
