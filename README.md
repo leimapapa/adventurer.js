@@ -2,7 +2,7 @@
 Create a "Choose Your Own Adventure" Game Easily
 
 
-![](/example.png)
+![Example Story Screenshot](/example.png)
 
 
 # Getting started
