@@ -49,3 +49,12 @@ Then we can kick off our story by running this function:
 ```
 adventurer.start('.adventureArea', myAdventure, 'Q0');
 ```
+
+
+## CDN
+
+https://cdn.jsdelivr.net/gh/leimapapa/adventurer.js/adventurer.min.js
+
+## Example
+
+https://codepen.io/leimapapa/pen/BaRLyEZ
