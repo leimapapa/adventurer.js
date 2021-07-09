@@ -9,13 +9,13 @@ Create a "Choose Your Own Adventure" Game Easily
 Write your story script inside of an object.
 
 It should be in this format:
-```
+```js
 adventure.start('.targetElementClassOrID', storyObject, 'firstQuestion');
 ```
 
 
 Your story object should be in this format:
-```
+```js
 let myAdventure = {
 	Q0: {
 		question:'You awake and find yourself in a round room with no doors or windows...',
@@ -46,16 +46,23 @@ let myAdventure = {
 ```
 
 Then we can kick off our story by running this function:
-```
+```js
 adventurer.start('.adventureArea', myAdventure, 'Q0');
 ```
 
 ### HTML
-```
-<div class="adventureArea"></div>
+```html
+<html>
+	<head>
+		<script src="https://cdn.jsdelivr.net/gh/leimapapa/adventurer.js/adventurer.min.js"></script>
+	</head>
+	<body>
+		<div class="adventureArea"></div>
+	</body>
+</html>
 ```
 ### CSS
-```
+```css
 .adventureArea {
 	position:absolute;
 	top:50%;
@@ -69,7 +76,7 @@ adventurer.start('.adventureArea', myAdventure, 'Q0');
 */
 ```
 ### JS
-```
+```js
 let myAdventure = {
 	Q0: {
 		question:'You awake and find yourself in a round room with no doors or windows...',
