@@ -50,6 +50,52 @@ Then we can kick off our story by running this function:
 adventurer.start('.adventureArea', myAdventure, 'Q0');
 ```
 
+### HTML
+```
+<div class="adventureArea"></div>
+```
+### CSS
+```
+.adventureArea {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+```
+### JS
+```
+let myAdventure = {
+	Q0: {
+		question:'You awake and find yourself in a round room with no doors or windows...',
+		options:[
+			{btn:"💨 Fart", next:'Q1'},
+			{btn:"😴 Take a nap", next:'Q2'},
+			{btn:"👅 Lick the wall", next:'Q3'},
+			{btn:"😱 Scream for help", next:'Q9'}
+		]
+	},
+	Q1: {
+		question:'Wow, that kinda stinks...',
+		options:[
+			{btn:"💨 Fart again", next:'Q11'},
+			{btn:"🤮 Throw up", next:'Q8'},
+			{btn:"👅 Lick the stinky walls", next:'Q3'}
+		]
+	},
+	Q2: {
+		question:'Wow, that was refreshing...',
+		options:[
+			{btn:"😴 Oh well, time to sleep some more", next:'Q20'},
+			{btn:"🤔 What if this is still a dream? How do we know anything is real?", next:'Q7'},
+			{btn:"👅 Lick the walls", next:'Q3'}
+		]
+	}
+}
+
+
+adventurer.start('.adventureArea', myAdventure, 'Q0');
+```
 
 ## CDN
 
