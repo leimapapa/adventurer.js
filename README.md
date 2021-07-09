@@ -62,6 +62,11 @@ adventurer.start('.adventureArea', myAdventure, 'Q0');
 	left:50%;
 	transform:translate(-50%,-50%);
 }
+
+/*
+// edit how the questions, choices, and the finished box show up:
+.questionBox, .finishedBox, .selectionBox, & .finishedBox
+*/
 ```
 ### JS
 ```
