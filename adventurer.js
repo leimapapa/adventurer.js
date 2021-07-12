@@ -29,6 +29,7 @@ const adventurer = (function () {
 				color: ${textCol};
 				cursor:pointer;
 				position: relative;
+				display:block;
 				top: 0;
 				left: 50%;
 				-webkit-transform:translate(-50%);
@@ -47,6 +48,7 @@ const adventurer = (function () {
 				margin-top:4px;
 				text-align:left;
 				transition:300ms;
+				white-space: preline;
 			}
 			.selectionBox:hover{
 				background:-o-linear-gradient(65deg, ${selectionBox}, ${selectionBoxHover});
@@ -87,7 +89,6 @@ const adventurer = (function () {
 					for (let i=0; i< selections.length; i++){
 						nextObj.push(selections[i].next);
 						document.querySelector(elem).innerHTML += `
-							<br/>
 							<button class="selectionBox s${i}">${selections[i].btn}</button>
 						`;
 					}
