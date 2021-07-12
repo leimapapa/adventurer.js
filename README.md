@@ -18,7 +18,6 @@ adventure.start('#targetElementID', storyObject, 'firstQuestion', false);
 ```css
 /*Box that contains the question*/
 .questionBox{
-
 }
 /*What shows up when you don't point to an existing object*/
 .finishedBox{
