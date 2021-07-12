@@ -5,10 +5,37 @@ Create a "Choose Your Own Adventure" Game Easily
 ![Example Story Screenshot](/example.png)
 
 
+# Docs
+```js
+//use default styling
+adventure.start('.targetElementClass', storyObject, 'firstQuestion', true);
+//OR
+adventure.start('#targetElementID', storyObject, 'firstQuestion');
+
+//use your own styling
+adventure.start('#targetElementID', storyObject, 'firstQuestion', false);
+```
+```
+/*Box that contains the question*/
+.questionBox{
+
+}
+/*What shows up when you don't point to an existing object*/
+.finishedBox{
+}
+
+/*all questions*/
+.selectionBox{
+}
+/*individual questions*/
+.s0, .s1, .s2, .s3, .s4, .s5 .....{
+}
+```
+
 # Getting started
 Write your story script inside of an object.
 
-It should be in this format:
+The adventurer function should be in this format:
 ```js
 adventure.start('.targetElementClassOrID', storyObject, 'firstQuestion');
 ```
