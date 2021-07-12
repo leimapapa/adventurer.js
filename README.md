@@ -15,7 +15,7 @@ adventure.start('#targetElementID', storyObject, 'firstQuestion');
 //use your own styling
 adventure.start('#targetElementID', storyObject, 'firstQuestion', false);
 ```
-```
+```css
 /*Box that contains the question*/
 .questionBox{
 
