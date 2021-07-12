@@ -101,8 +101,10 @@ const adventurer = (function () {
 		}
 	}
 	return {
-		start: (elem, snippets, selection) => {
-			stylePage();
+		start: (elem, snippets, selection, defaultCSS=true) => {
+			if (defaultCSS){
+				stylePage();
+			}
 			nextQuestion(elem, snippets, selection);
 		}
 	}
